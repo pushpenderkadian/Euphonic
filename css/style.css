@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+#hero{
+    height: 100vh;
+    background-image: url(../media/home.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#nav{
+    height: 10vh;
+    margin:0;
+    padding: 7%;
+    
+}
+.naam{
+    font-size: xx-large;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: 800;
+    
+}
+#image{
+    height: 10vh;
+    width: 10vh;
+    margin: 0;
+    padding: 0;
+}
