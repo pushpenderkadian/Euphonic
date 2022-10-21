@@ -1,0 +1,30 @@
+body{
+    background-image: url(../media/cpage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#form{
+    text-align: center;
+}
+#form .heding{
+    letter-spacing: 0.1rem;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+#form .input{
+    margin-top: 50px;
+}
+input{
+    border: 3px solid white;
+    border-radius: 10px;
+    height: 50px;
+    width: 350px;
+    background: transparent;
+    text-align: center;
+}
+#form button{
+    margin-top: 50px;
+    width: 200px;
+}

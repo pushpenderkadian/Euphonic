@@ -1,6 +1,8 @@
 body{
     margin: 0;
     padding: 0;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 700ms ease;
 
 }
 #hero{
@@ -11,7 +13,7 @@ body{
     background-repeat: no-repeat;
 }
 #nav{
-    height: 10vh;
+    height: 10%;
     margin:0;
     padding-top: 4%;
     padding-left: 10%;
@@ -38,91 +40,8 @@ body{
     font-family: 'Dancing Script';
     font-size: 1.3rem;
 }
-
-button{
-    background-color: #f2f2f2;
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 120px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 800;
+#text button{
     margin-top: 10%;
-    position: relative;
-    overflow: hidden;
-    transition: 0.2s;
-}
-
-button:hover {
-    color: #255784;
-    background: #2196f3;
-    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-    transition-delay: 1s;
-}
-
-button span {
-    position: absolute;
-    display: block;
-}
-
-button span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #2196f3);
-}
-
-button:hover span:nth-child(1) {
-    left: 100%;
-    transition: 1s;
-}
-
-button span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #2196f3);
-}
-
-button:hover span:nth-child(3) {
-    right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
-}
-
-button span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #2196f3);
-}
-
-button:hover span:nth-child(2) {
-    top: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
-}
-
-button span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #2196f3);
-}
-
-button:hover span:nth-child(4) {
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.75s;
 }
 
 #image{
@@ -130,3 +49,725 @@ button:hover span:nth-child(4) {
     width: 50%;
     padding-left: 14%;
 }
+
+#features{
+    background-image: url(../media/feature.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+#features .sections{
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width: 768px){
+    #features .sections{
+        display: flex;
+        flex-direction: column;
+    }
+    #features .sections .left-side{
+        width: 100%;
+    }
+    #features .sections .right-side{
+        width: 100%;
+    }
+}
+   
+.left-side{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.left-side img{
+    margin-top: 12%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80vh;
+    display: block;
+}
+.right-side{
+    text-align: center;
+    width: 50%;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.right-side h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 50;
+    font-size: 3rem;
+    color: black;
+    margin-top: 10%;
+}
+.right-side ul{
+    text-align: left;
+    margin-left: 7%;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* 
+#abteuphon{
+    height: 100vh;
+    background-image: url(../media/abteuphon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+}
+.text{
+
+}
+.hds{
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: YAD7UIABuG4-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/801906610d8057b9f35270bfe33b89ef.woff2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD7UIABuG4-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/a9e77b44af97a0902e4af6a320f572d2.woff2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD7UIABuG4-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/801906610d8057b9f35270bfe33b89ef.woff2);
+    font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD7UIABuG4-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/a9e77b44af97a0902e4af6a320f572d2.woff2);
+    font-weight: 700;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD7UIABuG4-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/801906610d8057b9f35270bfe33b89ef.woff2);
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD7UIABuG4-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/801906610d8057b9f35270bfe33b89ef.woff2);
+    font-weight: 100;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD7UIABuG4-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/801906610d8057b9f35270bfe33b89ef.woff2);
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD7UIABuG4-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/801906610d8057b9f35270bfe33b89ef.woff2);
+    font-weight: 200;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD7UIABuG4-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/801906610d8057b9f35270bfe33b89ef.woff2);
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD7UIABuG4-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/801906610d8057b9f35270bfe33b89ef.woff2);
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD7UIABuG4-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/801906610d8057b9f35270bfe33b89ef.woff2);
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD7UIABuG4-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/801906610d8057b9f35270bfe33b89ef.woff2);
+    font-weight: 500;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD7UIABuG4-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/a9e77b44af97a0902e4af6a320f572d2.woff2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD7UIABuG4-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/a9e77b44af97a0902e4af6a320f572d2.woff2);
+    font-weight: 600;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD7UIABuG4-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/a9e77b44af97a0902e4af6a320f572d2.woff2);
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD7UIABuG4-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/a9e77b44af97a0902e4af6a320f572d2.woff2);
+    font-weight: 800;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD7UIABuG4-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/a9e77b44af97a0902e4af6a320f572d2.woff2);
+    font-weight: 900;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD7UIABuG4-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/a9e77b44af97a0902e4af6a320f572d2.woff2);
+    font-weight: 900;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAE283ulH4k-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d92678241b48d305ca61bce5bc94ff55.woff2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAE283ulH4k-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/b9504d70cf7622fb3748d7d46f569c53.woff2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAE283ulH4k-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d92678241b48d305ca61bce5bc94ff55.woff2);
+    font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAE283ulH4k-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/b9504d70cf7622fb3748d7d46f569c53.woff2);
+    font-weight: 700;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAE283ulH4k-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d92678241b48d305ca61bce5bc94ff55.woff2);
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAE283ulH4k-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d92678241b48d305ca61bce5bc94ff55.woff2);
+    font-weight: 100;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAE283ulH4k-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d92678241b48d305ca61bce5bc94ff55.woff2);
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAE283ulH4k-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d92678241b48d305ca61bce5bc94ff55.woff2);
+    font-weight: 200;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAE283ulH4k-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d92678241b48d305ca61bce5bc94ff55.woff2);
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAE283ulH4k-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d92678241b48d305ca61bce5bc94ff55.woff2);
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAE283ulH4k-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d92678241b48d305ca61bce5bc94ff55.woff2);
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAE283ulH4k-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d92678241b48d305ca61bce5bc94ff55.woff2);
+    font-weight: 500;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAE283ulH4k-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/b9504d70cf7622fb3748d7d46f569c53.woff2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAE283ulH4k-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/b9504d70cf7622fb3748d7d46f569c53.woff2);
+    font-weight: 600;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAE283ulH4k-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/b9504d70cf7622fb3748d7d46f569c53.woff2);
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAE283ulH4k-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/b9504d70cf7622fb3748d7d46f569c53.woff2);
+    font-weight: 800;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAE283ulH4k-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/b9504d70cf7622fb3748d7d46f569c53.woff2);
+    font-weight: 900;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAE283ulH4k-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/b9504d70cf7622fb3748d7d46f569c53.woff2);
+    font-weight: 900;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD_cUhqUyg-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/88a36cab6d7cfa75bff7e49535b9642a.woff2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD_cUhqUyg-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/c19f8e9cab364abc00a750036f731e21.woff2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD_cUhqUyg-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/2939e26d0be644944cd621be7bec5f5e.woff2);
+    font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD_cUhqUyg-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/267ca74019c66328f093f6614fe3106e.woff2);
+    font-weight: 700;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD_cUhqUyg-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/88a36cab6d7cfa75bff7e49535b9642a.woff2);
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD_cUhqUyg-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/2939e26d0be644944cd621be7bec5f5e.woff2);
+    font-weight: 100;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD_cUhqUyg-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/88a36cab6d7cfa75bff7e49535b9642a.woff2);
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD_cUhqUyg-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/2939e26d0be644944cd621be7bec5f5e.woff2);
+    font-weight: 200;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD_cUhqUyg-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/88a36cab6d7cfa75bff7e49535b9642a.woff2);
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD_cUhqUyg-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/2939e26d0be644944cd621be7bec5f5e.woff2);
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD_cUhqUyg-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/88a36cab6d7cfa75bff7e49535b9642a.woff2);
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD_cUhqUyg-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/2939e26d0be644944cd621be7bec5f5e.woff2);
+    font-weight: 500;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD_cUhqUyg-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/c19f8e9cab364abc00a750036f731e21.woff2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD_cUhqUyg-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/267ca74019c66328f093f6614fe3106e.woff2);
+    font-weight: 600;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD_cUhqUyg-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/c19f8e9cab364abc00a750036f731e21.woff2);
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD_cUhqUyg-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/267ca74019c66328f093f6614fe3106e.woff2);
+    font-weight: 800;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAD_cUhqUyg-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/c19f8e9cab364abc00a750036f731e21.woff2);
+    font-weight: 900;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAD_cUhqUyg-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/267ca74019c66328f093f6614fe3106e.woff2);
+    font-weight: 900;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAE28xnrq-8-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/bf060680c1e727f02033e99c60002e27.woff2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAE28xnrq-8-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d558fdb49ef4605044b9aa3147d3a762.woff2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAE28xnrq-8-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/bf060680c1e727f02033e99c60002e27.woff2);
+    font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAE28xnrq-8-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d558fdb49ef4605044b9aa3147d3a762.woff2);
+    font-weight: 700;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAE28xnrq-8-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/bf060680c1e727f02033e99c60002e27.woff2);
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAE28xnrq-8-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/bf060680c1e727f02033e99c60002e27.woff2);
+    font-weight: 100;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAE28xnrq-8-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/bf060680c1e727f02033e99c60002e27.woff2);
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAE28xnrq-8-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/bf060680c1e727f02033e99c60002e27.woff2);
+    font-weight: 200;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAE28xnrq-8-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/bf060680c1e727f02033e99c60002e27.woff2);
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAE28xnrq-8-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/bf060680c1e727f02033e99c60002e27.woff2);
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAE28xnrq-8-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/bf060680c1e727f02033e99c60002e27.woff2);
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAE28xnrq-8-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/bf060680c1e727f02033e99c60002e27.woff2);
+    font-weight: 500;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAE28xnrq-8-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d558fdb49ef4605044b9aa3147d3a762.woff2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAE28xnrq-8-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d558fdb49ef4605044b9aa3147d3a762.woff2);
+    font-weight: 600;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAE28xnrq-8-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d558fdb49ef4605044b9aa3147d3a762.woff2);
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAE28xnrq-8-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d558fdb49ef4605044b9aa3147d3a762.woff2);
+    font-weight: 800;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YAE28xnrq-8-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d558fdb49ef4605044b9aa3147d3a762.woff2);
+    font-weight: 900;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YAE28xnrq-8-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d558fdb49ef4605044b9aa3147d3a762.woff2);
+    font-weight: 900;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+    font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
+    font-weight: 700;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+    font-weight: 100;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+    font-weight: 200;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+    font-weight: 500;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
+    font-weight: 600;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
+    font-weight: 800;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
+    font-weight: 900;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: YACgEZ1cb1Q-0;
+    font-display: swap;
+    src: url(https://euphonic.my.canva.site/fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
+    font-weight: 900;
+    font-style: italic;
+  }
