@@ -1,4 +1,4 @@
-button{
+.button1{
     background-color: white;
     border: none;
     color: black;
@@ -15,20 +15,19 @@ button{
     overflow: hidden;
     transition: 0.2s;
 }
-
-button:hover {
+.button1:hover {
     color: #255784;
     background: #2196f3;
     box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
     transition-delay: 1s;
 }
 
-button span {
+.button1 span {
     position: absolute;
     display: block;
 }
 
-button span:nth-child(1) {
+.button1 span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
@@ -36,12 +35,12 @@ button span:nth-child(1) {
     background: linear-gradient(90deg, transparent, #2196f3);
 }
 
-button:hover span:nth-child(1) {
+.button1:hover span:nth-child(1) {
     left: 100%;
     transition: 1s;
 }
 
-button span:nth-child(3) {
+.button1 span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -49,13 +48,13 @@ button span:nth-child(3) {
     background: linear-gradient(270deg, transparent, #2196f3);
 }
 
-button:hover span:nth-child(3) {
+.button1:hover span:nth-child(3) {
     right: 100%;
     transition: 1s;
     transition-delay: 0.5s;
 }
 
-button span:nth-child(2) {
+.button1 span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
@@ -63,13 +62,13 @@ button span:nth-child(2) {
     background: linear-gradient(180deg, transparent, #2196f3);
 }
 
-button:hover span:nth-child(2) {
+.button1:hover span:nth-child(2) {
     top: 100%;
     transition: 1s;
     transition-delay: 0.25s;
 }
 
-button span:nth-child(4) {
+.button1 span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
@@ -77,8 +76,33 @@ button span:nth-child(4) {
     background: linear-gradient(360deg, transparent, #2196f3);
 }
 
-button:hover span:nth-child(4) {
+.button1:hover span:nth-child(4) {
     bottom: 100%;
     transition: 1s;
     transition-delay: 0.75s;
+}
+
+.button2{
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 30px;
+    cursor: pointer;
+    border-radius: 120px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.button2:hover{
+    color: #255784;
+    background: #2196f3;
+    border: 1px solid #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
 }

@@ -29,12 +29,12 @@ body{
 #content{
     height: 90vh;
     margin: 0;
-    padding-left: 10%;
     display: flex;
     flex-direction: row;
 }
 
 #text{
+    padding-left: 10%;
     padding-top: 7%;
     width: 50%;
     font-family: 'Dancing Script';
@@ -106,6 +106,52 @@ body{
     margin-left: 7%;
     color: white;
     font-size: 1.5rem;
+}
+
+#vfeed{
+    background-image: url(../media/feedback.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+#vfeed #content #text{
+  padding-left: 15%;
+}
+#vfeed #content #text .heding{
+    margin-top: 10%;
+    font-size: 4.5rem;
+    padding-bottom: 10%;
+}
+#vfeed #content #text .cntnt{
+    font-size: 1.5rem;
+    /* padding-bottom: 5%; */
+}
+#vfeed #content #image {
+  padding-top: 10%;
+}
+#vfeed #content #image .reviews{
+    width: 85%;
+}
+
+#vfeed #content #image .reviews .cntnt1{
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#vfeed #content #image .reviews .cntnt2{
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: white;
+}
+#final{
+    background-image: url(../media/final.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
 }
 
 /* 

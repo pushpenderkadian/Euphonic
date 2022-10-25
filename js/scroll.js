@@ -10,7 +10,8 @@ document.addEventListener('wheel', wheelListener);
 function wheelListener(e) {
   if(e.deltaY > 0) {
     scrollPage(-pageHeight);
-  } else {
+  }
+  else {
     scrollPage(+pageHeight);
   }
 }
@@ -19,9 +20,14 @@ function scrollPage(scrollSize) {
   if(isAnimating){
     return;
   }
+  if(scrollSize < pageHeight*(-2)){
+    scrollSize = -pageHeight;
+  }
   isAnimating = true;
   var yPos = getNewYPos(scrollSize);
-  document.body.style.transform = 'translate3d(0px,'+ yPos + ',0px)';
+  console.log("ypos :- ",yPos);
+  console.log("page height :- ",pageHeight);
+  document.body.style.transform = 'translate3d(0px,'+ yPos + 'px,0px)';
 }
 
 function getNewYPos(add){
@@ -31,7 +37,7 @@ function getNewYPos(add){
   if(newYPos > 0){
     isAnimating = false;
   }
-  return Math.min(0, newYPos) + 'px';
+  return Math.min(0, newYPos);
 }
 
 
