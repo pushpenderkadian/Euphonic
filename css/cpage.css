@@ -9,11 +9,13 @@ body{
     text-align: center;
 }
 #form1 .hedingm{
+    padding-top: 10px;
     letter-spacing: 0.1rem;
     font-size: 1.5rem;
     font-weight: 800;
     font-family: 'Roboto', sans-serif;
     color: black;
+    text-transform: uppercase;
 }
 #form1 .input1{
     margin-top: 50px;
