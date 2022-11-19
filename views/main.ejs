@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>choice</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/cpage.css" />
+    <link rel="stylesheet" href="/stylesheets/button.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <% if(action == 'edit') { %>
+        <div id="final">
+            <div id="nav">
+                <a class="naam" href="#">EUPHONIC</a>
+            </div>
+            <div id="form1" style="padding-top: 0%; ">
+            <div class="hedingm">BASED ON YOUR CHOICES,<br>EUPHONIC PREDICTS YOU MIGHT LIKE THE MUSIC OF</div>
+            <div id="imgpos"><img src="https://euphonic.my.canva.site/images/941ae399fc62da61303e06518c23731b.jpg" alt="" height="200px"></div>
+            <div class="hedingm">MUSIC NAME</div>
+            <div id="uld">
+                <button class="button2"><span></span><span></span><span></span><span></span>LIKE</button>
+                <button class="button2"><span></span><span></span><span></span><span></span>DISLIKE</button>
+                <button class="button2"><span></span><span></span><span></span><span></span>DON'T KNOW</button>
+                    
+            </div>
+        </div>
+    </div>
+        <% } else { %>
+    <div id="main">
+        <div id="nav">
+            <a class="naam" href="#">EUPHONIC</a>
+        </div>
+        <div id="form1">
+            <div class="hedingm">
+                TO TEACH EUPHONIC WHAT YOU ARE LIKE, <br>PLEASE TYPEIN 3 BANDS THAT YOU ALREADY <br>KNOW AND LIKE.
+            </div>
+        </div>
+        
+        <form action="final">
+            <div class="input1">
+                <input type="text" placeholder="Band 1 ..." name="Band1" id="myInput1" onkeyup="filterFunction1()" onfocus="myFunction1()" >
+            
+            <div id="myDropdown1" class="dropdown-content">
+                <%
+                if(main.length > 0)
+                {
+                    main.forEach(function(data){
+                %>
+                <a onclick="setvaluemi1('<%= data.names %>'); myFunction1();"><%= data.names %></a>
+                <%
+                    });
+                }%>
+              </div>
+            </div>
+            <div class="input1">
+                <input type="text" value="" placeholder="Band 2 ..." name="Band2" id="myInput2" onkeyup="filterFunction2()" onfocus="myFunction2()" >
+            
+            <div id="myDropdown2" class="dropdown-content1">
+                <%
+                if(main.length > 0)
+                {
+                    main.forEach(function(data){
+                %>
+                <a onclick="setvaluemi2('<%= data.names %>'); myFunction2();"><%= data.names %></a>
+                <%
+                    });
+                }%>
+              </div>
+            </div>
+            <div class="input1">
+                <input type="text" placeholder="Band 3 ..." name="Band3" id="myInput3" onkeyup="filterFunction3()" onfocus="myFunction3()" >
+            
+            <div id="myDropdown3" class="dropdown-content2">
+                <%
+                if(main.length > 0)
+                {
+                    main.forEach(function(data){
+                %>
+                <a onclick="setvaluemi3('<%= data.names %>'); myFunction3();"><%= data.names %></a>
+                <%
+                    });
+                }%>
+              </div>
+            </div>
+            <div class="input1">
+                <a onclick="let x = Math.floor((Math.random() * 5) + 1);location.href = `/final?id=${x}`;"class="button1"><span></span><span></span><span></span><span></span>Submit</a>
+            </a>
+            </div>
+        </form>
+    </div>
+    <% } %>
+    <script>
+        function setvaluemi1(value) {
+            document.getElementById("myInput1").value = value;
+        }
+        function setvaluemi3(value) {
+            document.getElementById("myInput3").value = value;
+        }
+        function setvaluemi2(value) {
+            document.getElementById("myInput2").value = value;
+        }
+        function myFunction1() {
+            document.getElementById("myDropdown1").classList.toggle("show");
+        }
+        function myFunction2() {
+            document.getElementById("myDropdown2").classList.toggle("show");
+        }
+        function myFunction3() {
+            document.getElementById("myDropdown3").classList.toggle("show");
+        }
+
+        function filterFunction1() {
+            
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput1");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown1");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                txtValue = a[i].textContent || a[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+        function filterFunction2() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput2");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown2");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                txtValue = a[i].textContent || a[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {    
+                    a[i].style.display = "none";
+                }
+            }
+        }
+        function filterFunction3() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput3");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown3");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                txtValue = a[i].textContent || a[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

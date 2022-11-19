@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    padding: 0;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 700ms ease;
+
+}
+#hero{
+    height: 100vh;
+    background-image: url(/images/home.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#nav{
+    height: 10%;
+    margin:0;
+    padding-top: 4%;
+    padding-left: 10%;
+    
+}
+.naam{
+    font-size: xx-large;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: 800;
+    
+}
+#content{
+    height: 90vh;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#text{
+    padding-left: 10%;
+    padding-top: 7%;
+    width: 50%;
+    font-family: 'Dancing Script';
+    font-size: 1.3rem;
+}
+#text button{
+    margin-top: 10%;
+}
+
+#image{
+    height: 80vh;
+    width: 50%;
+    padding-left: 14%;
+}
+
+#features{
+    background-image: url(/images/feature.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+#features .sections{
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width: 768px){
+    #features .sections{
+        display: flex;
+        flex-direction: column;
+    }
+    #features .sections .left-side{
+        width: 100%;
+    }
+    #features .sections .right-side{
+        width: 100%;
+    }
+}
+   
+.left-side{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.left-side img{
+    margin-top: 12%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80vh;
+    display: block;
+}
+.right-side{
+    text-align: center;
+    width: 50%;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.right-side h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 50;
+    font-size: 3rem;
+    color: black;
+    margin-top: 10%;
+}
+.right-side ul{
+    text-align: left;
+    margin-left: 7%;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#vfeed{
+    background-image: url(/images/feedback.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+#vfeed #content #text{
+  padding-left: 15%;
+}
+#vfeed #content #text .heding{
+    margin-top: 10%;
+    font-size: 4.5rem;
+    padding-bottom: 10%;
+}
+#vfeed #content #text .cntnt{
+    font-size: 1.5rem;
+    /* padding-bottom: 5%; */
+}
+#vfeed #content #image {
+  padding-top: 10%;
+}
+#vfeed #content #image .reviews{
+    width: 85%;
+}
+
+#vfeed #content #image .reviews .cntnt1{
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#vfeed #content #image .reviews .cntnt2{
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: white;
+}
+#final{
+    background-image: url(/images/final.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

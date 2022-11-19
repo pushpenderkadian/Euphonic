@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestion</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/button.css" />
+    <link rel="stylesheet" href="/stylesheets/cpage.css" />
+</head>
+<body>
+    <div id="final">
+        <div id="nav">
+            <a class="naam" href="#">EUPHONIC</a>
+        </div>
+        <div id="form1" style="padding-top: 0%; ">
+        <div class="hedingm">BASED ON YOUR CHOICES,<br>EUPHONIC PREDICTS YOU MIGHT LIKE THE MUSIC OF</div>
+        <div id="imgpos"><img src="/images/poster.jpg" alt="" height="200px"></div>
+        <%
+                if(final.length > 0)
+                {
+                    final.forEach(function(data){
+                %>
+        <div class="hedingm"><%= data.music %></div>
+        <%
+                    });
+                }%>
+        <div id="uld">
+            <button class="button2"><span></span><span></span><span></span><span></span>LIKE</button>
+            <button class="button2"><span></span><span></span><span></span><span></span>DISLIKE</button>
+            <button class="button2"><span></span><span></span><span></span><span></span>DON'T KNOW</button>
+                
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
